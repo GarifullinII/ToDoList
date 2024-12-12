@@ -24,6 +24,8 @@ struct ToDoListApp: App {
             NavigationStack {
                 ListIView()
             }
+            // исправить .navigationViewStyle
+            .navigationViewStyle(StackNavigationViewStyle())
             .environmentObject(listViewModel)
         }
     }
